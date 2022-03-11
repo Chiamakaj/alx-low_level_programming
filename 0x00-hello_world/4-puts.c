@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Printing out a string using puts function
+ * main - Entry point, prints Programming in like a multilingual puzzle
  *
  * Return Always 0 (Success)
  */
