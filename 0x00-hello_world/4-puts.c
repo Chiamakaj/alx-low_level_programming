@@ -5,7 +5,7 @@
  * Description: Using the main function
  * to print out strings.
  *
- * Return Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
