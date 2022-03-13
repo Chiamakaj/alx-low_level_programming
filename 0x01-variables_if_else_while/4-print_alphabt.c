@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-	char ch = 'a';
+	char ch;
 
-	for (; ch <= 'z';)
+	for (ch = 'a' ; ch <= 'z';)
 	{
 		if (ch == 'd' || ch == 'p')
 		ch += 2;
