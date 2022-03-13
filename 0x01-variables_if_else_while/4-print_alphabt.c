@@ -13,7 +13,7 @@ int main(void)
 	{
 		{
 		while (ch == 'e' || ch =='q')
-			ch+=2;
+			ch++;
 		}
 		putchar(ch);
 	}
