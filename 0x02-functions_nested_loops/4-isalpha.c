@@ -13,7 +13,7 @@ int _isalpha(int c)
 	int i, j;
 
 	for (i = 'a'; i <= 'z'; i++)
-		for (j = 'A'; j <= 'Z'; j++)
+	for (j = 'A'; j <= 'Z'; j++)
 		if (c == i || c == j)
 	return (1);
 	return (0);
