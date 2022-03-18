@@ -20,10 +20,10 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(c + '0');
 			}
-			else	
+			else
 			{
-				_putchar((c/10)+'0');
-				_putchar((c%10)+'0');
+				_putchar((c / 10) + '0');
+				_putchar((c % 10) + '0');
 			}
 			if (j < 9)
 			{
@@ -31,6 +31,6 @@ void times_table(void)
 				_putchar(' ');
 			}
 		}
-	_putchar('\n');
+		_putchar('\n');
 	}
 }
