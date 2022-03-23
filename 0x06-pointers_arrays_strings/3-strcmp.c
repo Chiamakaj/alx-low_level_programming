@@ -17,18 +17,13 @@ int _strcmp(char *s1, char *s2)
 		i++;
 	}
 	j = 0;
-	while(s2[j] != '\0')
+	while (s2[j] != '\0')
 	{
 		j++;
 	}
-	if (i < j)
+	if (i != j)
 	{
-		return (-15);
+		return (i - j);
 	}
-	else if (i > j)
-	{
-		return (15);
-	}
-	else
 	return (0);
 }
