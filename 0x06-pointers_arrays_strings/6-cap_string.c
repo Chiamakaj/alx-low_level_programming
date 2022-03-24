@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * cap_string - a function that capitalizes all the first
- * letters of the words in a string.
+ * cap_string - a function that capitalizes all words of a string.
  * @c: the string to capitalize
  *
  * Return: the capitalized string
@@ -10,7 +9,7 @@
 char *cap_string(char *c)
 {
 	int i;
-	
+
 	for (i = 0 ; c[i] != '\0' ; i++)
 	{
 		if (i == 0)
@@ -42,7 +41,7 @@ char *cap_string(char *c)
 		}
 		else
 		{
-			if(c[i] >= 'A' && c[i] <= 'Z')
+			if (c[i] >= 'A' && c[i] <= 'Z')
 			{
 				c[i] = c[i] + 32;
 			}
