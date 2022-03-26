@@ -9,14 +9,20 @@
  */
 int _isupper(int c)
 {
-	int i;
+	int i, j;
 
 	for (i = 'A' ; i <= 'Z' ; i++)
 	{
-		if (c == i)
+		for (j = 'a' ; j <= 'z' ; j++)
 		{
-			return (1);
+			if (c == i)
+			{
+				returm (1);
+			}
+			if (c == j)
+			{
+				return (0);
+			}
 		}
-		return (0);
 	}
 }
