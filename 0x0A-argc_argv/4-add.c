@@ -5,6 +5,7 @@
  * main - a program that sum of numbers.
  * @argv: command line string
  * @agrc: size of argv
+ * @atoi: converts char to int
  *
  * Return: 0
  */
