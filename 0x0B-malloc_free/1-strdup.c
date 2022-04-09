@@ -27,7 +27,7 @@ char *_strdup(char *str)
 	{
 		array[i] = str[i];
 	}
-	if (array == NULL)
+	if (array < str)
 	{
 		return (NULL);
 	}
