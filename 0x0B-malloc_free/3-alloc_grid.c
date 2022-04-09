@@ -41,7 +41,11 @@ int **alloc_grid(int width, int height)
 		{
 			matrix[i][j] = 0;
 		}
+		if (matrix == NULL)
+		{
+			free(matrix);
+			return (NULL);
+		}
 	}
 	return (matrix);
-	free(*matrix);
 }
