@@ -8,6 +8,8 @@
  * @owner: third member
  *
  * Description: a new type called struct dog with 3 members.
+ * of the struct type which will be name, age and owner with
+ * all their own datatypes.
  */
 struct dog
 {
