@@ -4,6 +4,7 @@
 
 /**
  * init_dog - a function that initialize a variable
+ * @d: struct name
  * @name: first member
  * @age: second member
  * @owner: third member
@@ -12,15 +13,15 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog *bark;
-
-	bark = malloc(sizeof(struct dog));
-	if (bark == NULL)
+	if (d == NULL)
 	{
-		return;
+		d = malloc(sizeof(struct dog));
+		if (d == NULL)
+		{
+			return;
+		}
 	}
-	bark = d;
-	bark->name = name;
-	bark->age = age;
-	bark->owner = owner;
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
