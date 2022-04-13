@@ -10,13 +10,15 @@
  * @owner: fourth member
  *
  * Description: this function is designed to initialize
- * avariable ot type struct dog.
- * Return: void
+ * a variable to type struct dog.
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	d = malloc(sizeof(struct dog));
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
+	struct dog *bark;
+
+	bark = malloc(sizeof(struct dog));
+	bark = d;
+	bark->name = name;
+	bark->age = age;
+	bark->owner = owner;
 }
