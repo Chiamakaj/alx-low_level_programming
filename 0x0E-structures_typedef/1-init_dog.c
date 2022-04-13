@@ -3,11 +3,11 @@
 #include "dog.h"
 
 /**
- * init_dog - a function that initialize a variable
+ * init_dog - a function that initialize a variable of typr struct dog
  * @d: struct name
- * @name: first member
- * @age: second member
- * @owner: third member
+ * @name: name
+ * @age: age
+ * @owner: owner
  *
  * Return: void
  */
