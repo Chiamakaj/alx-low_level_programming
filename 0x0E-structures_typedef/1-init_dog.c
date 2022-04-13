@@ -4,19 +4,21 @@
 
 /**
  * init_dog - a function that initialize a variable
- * @d: pointer
- * @name: second member
- * @age: thrid member
- * @owner: fourth member
+ * @name: first member
+ * @age: second member
+ * @owner: third member
  *
- * Description: this function is designed to initialize
- * a variable to type struct dog.
+ * Return: void
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	struct dog *bark;
 
 	bark = malloc(sizeof(struct dog));
+	if (bark == NULL)
+	{
+		return;
+	}
 	bark = d;
 	bark->name = name;
 	bark->age = age;
