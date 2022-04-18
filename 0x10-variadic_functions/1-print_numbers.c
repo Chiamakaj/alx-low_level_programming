@@ -3,11 +3,9 @@
 #include "variadic_functions.h"
 
 /**
- * print_number - a function that prints numbers
+ * print_numbers - a function that prints numbers
  * @separator: is the string to be printed between numbers
  * @n: is the number of integers passed to the function
- * @...: other parameters
- *
  * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
