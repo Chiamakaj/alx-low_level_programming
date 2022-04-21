@@ -11,30 +11,20 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len, len1, i, j;
+	unsigned int len, len1, i, j = 0;
 	char *newmem;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
 	for (len = 0; s1[len] != '\0'; len++)
-	{
-	}
-	for (len1 = 0; s2[len1] != '\0'; len1++)
 	{
 	}
 	newmem = malloc(sizeof(char) * (len + n + 1));
 	if (newmem == NULL)
-	{
 		return (NULL);
-	}
 	i = 0;
-	j = 0;
 	while (s1[i] != '\0')
 	{
 		newmem[j] = s1[i];
