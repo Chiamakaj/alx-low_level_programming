@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 /**
- * print_str - a function that prints a string
+ * before_main - a function that prints a string
  * before the main function is executed.
  *
  * Return: void
  */
 
-void print_str(void) __attribute__ ((constructor));
+void before_main(void) __attribute__ ((constructor));
 
-void print_str(void)
+void befire_main(void)
 {
-	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
