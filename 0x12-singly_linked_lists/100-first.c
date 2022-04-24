@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * print_str - af unctions that prints a string
+ * print_str - a function that prints a string
  * before the main function is executed.
  *
  * Return: void
