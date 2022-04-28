@@ -6,7 +6,6 @@
  * a bit to 1 at a given index.
  * @n: input number
  * @index: is the index, starting from 0
- * of the bit you want to get
  * Return: value of bit or -1 if an error occured
  */
 int set_bit(unsigned long int *n, unsigned int index)
