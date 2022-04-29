@@ -11,18 +11,11 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int bits, tmp;
-	int mov = 0;
+	unsigned long int bits;
 
-	tmp = n;
-	while (tmp != 0)
-	{
-		mov++;
-		tmp = tmp >> 1;
-	}
-	if (index > mov)
-		return (-1);
 	bits = ((n >> index) & 1);
 	if ((bits == 1) || (bits == 0))
 		return (bits);
+	else
+		return (-1);
 }
