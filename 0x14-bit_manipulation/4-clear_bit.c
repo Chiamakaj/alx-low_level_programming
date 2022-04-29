@@ -10,7 +10,15 @@
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int bits;
+	unsigned long int bits, tmp;
+	int mov;
+
+	tmp = *n;
+	while (tmp != 0)
+	{
+		mov++;
+		tmp = tmp >> 1;
+	}
 
 	bits = 1 << index;
 	if ((bits | *n) == *n)
