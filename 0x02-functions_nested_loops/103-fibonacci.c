@@ -20,9 +20,9 @@ int main(void)
 		{
 			sum += c;
 		}
-		a = b;      // Copy n - 1 to n - 2
-		b = c;      // Copy current to n - 1
-		c = a + b;  // New term
+		a = b;
+		b = c;
+		c = a + b;
 	}
 	printf("%d", sum);
 	printf("\n");
