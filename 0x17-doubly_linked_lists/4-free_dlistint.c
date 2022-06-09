@@ -4,19 +4,19 @@
 #include "lists.h"
 
 /**
- * free_dlistint - a function that frees
- * a dlistint_t list.
- * @head: pointer to the first node
+ * free_dlistint - free a dlistint_t list
+ * @head: pointer to the beginning of the linked list
+ *
  * Return: void
  */
 void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *node = NULL;
+	dlistint_t *node;
 
 	while (head != NULL)
 	{
 		node = head->next;
-		free(node);
+		free(head);
 		head = node;
 	}
 }
